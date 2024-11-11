@@ -2,6 +2,10 @@ server:
   port: 8084
 
 spring:
+  config:
+    enabled: false
+    import: optional:configserver:instead
+
   data:
     mongodb:
       uri: mongodb://localhost:27017
